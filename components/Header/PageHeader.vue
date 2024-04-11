@@ -258,7 +258,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div >
+                                        <div>
                                             <button class="btn load-more">Load More</button>
                                         </div>
                                     </div>
@@ -365,12 +365,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div >
+                                        <div>
                                             <button class="btn load-more">Load More</button>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </el-drawer>
                         </div>
                         <div class="message">
@@ -667,19 +667,20 @@ a {
             }
 
 
-                .load-more {
-                    border: none;
-                    background: blue;
-                    color: white;
-                    width: 100%;
-                    padding: 10px 15px;
-                    border-radius: 20px;
-                    box-shadow: 0 1px 8px rgba(3, 94, 207, 0.5);
-                    &:hover {
-                        background: rgb(91, 91, 218);
-                    }
+            .load-more {
+                border: none;
+                background: blue;
+                color: white;
+                width: 100%;
+                padding: 10px 15px;
+                border-radius: 20px;
+                box-shadow: 0 1px 8px rgba(3, 94, 207, 0.5);
+
+                &:hover {
+                    background: rgb(91, 91, 218);
                 }
-          
+            }
+
 
 
         }
