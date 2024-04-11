@@ -24,5 +24,7 @@ export default defineComponent({
 
 
 <style lang="scss">
-
+    body {
+        background: #F9F9F9;
+    }
 </style>

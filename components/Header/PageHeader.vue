@@ -19,10 +19,10 @@
                                             </template>
                                             <el-menu-item-group>
                                                 <el-menu-item index="1-1">
-                                                    <nuxt-link to="">Sales Analytics</nuxt-link>
+                                                    <nuxt-link to="/sales-analytics">Sales Analytics</nuxt-link>
                                                 </el-menu-item>
 
-                                                <el-menu-item index="1-2"><nuxt-link to="">Sellers
+                                                <el-menu-item index="1-2"><nuxt-link to="/seller-profile">Sellers
                                                         List</nuxt-link></el-menu-item>
                                                 <el-menu-item index="1-3">
                                                     <nuxt-link to="">Sellers Table</nuxt-link></el-menu-item>

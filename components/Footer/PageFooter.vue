@@ -32,17 +32,20 @@ export default defineComponent({
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .footer-text {
         p {
             font-size: 12px;
             display: inline;
         }
     }
+
     .footer-img {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
+
         span {
             font-size: 12px;
         }
