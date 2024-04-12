@@ -1,26 +1,7 @@
 <template>
     <div class="seller-prolist">
-        <div class="seller-content">
-            <div class="seller-view">
-                <h4>Sales period:</h4>
-                <p>View profiles: 4/12</p>
-            </div>
-            <div class="seller-date">
-                <div class="block">
-                    <el-date-picker v-model="values" type="daterange" start-placeholder="Start date"
-                        end-placeholder="End date" :default-time="['00:00:00', '23:59:59']">
-                    </el-date-picker>
-                </div>
-                <div class="select">
-                    <el-select v-model="state.value" placeholder="Best Selling">
-                        <el-option v-for="item in state.options" :key="item.value" :label="item.label"
-                            :value="item.value">
-                        </el-option>
-                    </el-select>
-                </div>
-            </div>
-        </div>
-
+       
+        <ViewPageProfileVue/>
         <div class="seller-card">
             <div class="seller-content">
                 <div class="seller-img">
@@ -424,8 +405,13 @@
 
 <script>
 import { defineComponent, reactive, ref } from '@nuxtjs/composition-api'
+import ViewPageProfileVue from '~/components/ViewProfile/ViewPageProfile.vue'
+
 
 export default defineComponent({
+    components: {
+        ViewPageProfileVue,
+    },
     setup() {
         const values = ref('')
 
@@ -597,13 +583,16 @@ export default defineComponent({
 
             .el-rate__text {
                 display: none;
+            } 
+            .el-rate {
+                display: flex;
             }
         }
     }
 
     .seller-rating {
         padding: 20px 40px;
-        width: 100%;
+        width: 50%;
 
         .rating {
             padding: 10px 0;
@@ -636,6 +625,7 @@ export default defineComponent({
             }
         }
     }
+
     .pagination {
         padding: 20px 0;
     }
