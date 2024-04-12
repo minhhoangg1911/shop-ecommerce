@@ -44,7 +44,7 @@
                           >
                         </el-menu-item>
                         <el-menu-item index="1-4">
-                          <nuxt-link to=""
+                          <nuxt-link to="/seller-grid"
                             >Sellers Grid</nuxt-link
                           ></el-menu-item
                         >
