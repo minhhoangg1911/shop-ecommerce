@@ -25,6 +25,7 @@
     .content {
         padding: 20px 30px;
         background: #FFFFFF;
+        box-shadow: 0px 3px 14px rgba(226, 225, 225, 0.75);
         display: flex;
         justify-content: space-between;
         align-items: center;

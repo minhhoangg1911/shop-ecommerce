@@ -70,7 +70,7 @@
                           <nuxt-link to="/top-products"> Top Products</nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="2-2">
-                          <nuxt-link to=""> Products Grid </nuxt-link>
+                          <nuxt-link to="/products-grid"> Products Grid </nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="2-3">
                           <nuxt-link to=""> Products Management </nuxt-link>
