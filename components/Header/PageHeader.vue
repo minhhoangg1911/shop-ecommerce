@@ -49,7 +49,7 @@
                           ></el-menu-item
                         >
                         <el-menu-item index="1-5">
-                          <nuxt-link to=""
+                          <nuxt-link to="/seller-profile"
                             >Sellers Profile</nuxt-link
                           ></el-menu-item
                         >
