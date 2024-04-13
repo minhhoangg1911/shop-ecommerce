@@ -336,8 +336,6 @@ export default defineComponent({
 
 .revenue {
     padding: 30px 0;
-
-
     .revenue-grid {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -639,8 +637,6 @@ export default defineComponent({
 
 
     }
-
-
 
 }
 </style>

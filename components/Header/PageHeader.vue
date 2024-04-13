@@ -54,7 +54,7 @@
                           ></el-menu-item
                         >
                         <el-menu-item index="1-6">
-                          <nuxt-link to=""
+                          <nuxt-link to="/revenue"
                             >Revenue by Period</nuxt-link
                           ></el-menu-item
                         >
@@ -67,7 +67,7 @@
                       </template>
                       <el-menu-item-group>
                         <el-menu-item index="2-1">
-                          <nuxt-link to=""> Top Products</nuxt-link>
+                          <nuxt-link to="/top-products"> Top Products</nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="2-2">
                           <nuxt-link to=""> Products Grid </nuxt-link>
