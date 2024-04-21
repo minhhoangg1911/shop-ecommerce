@@ -220,7 +220,7 @@ export default defineComponent({
         i {
           position: absolute;
           bottom: 0;
-          right: 80px;
+          right: 90px;
           font-size: 20px;
           color: #fff;
           padding: 5px;
