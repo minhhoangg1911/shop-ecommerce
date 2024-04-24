@@ -28,20 +28,14 @@
                       </template>
                       <el-menu-item-group>
                         <el-menu-item index="1-1">
-                          <nuxt-link to="/sales-analytics"
-                            >Sales Analytics</nuxt-link
-                          >
+                          <nuxt-link to="/sales-analytics">Sales Analytics</nuxt-link>
                         </el-menu-item>
 
                         <el-menu-item index="1-2">
-                          <nuxt-link to="/seller-prolist">
-                            Sellers List
-                          </nuxt-link>
+                          <nuxt-link to="/seller-prolist"> Sellers List </nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="1-3">
-                          <nuxt-link to="/seller-table"
-                            >Sellers Table</nuxt-link
-                          >
+                          <nuxt-link to="/seller-table">Sellers Table</nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="1-4">
                           <nuxt-link to="/seller-grid"
@@ -73,35 +67,37 @@
                           <nuxt-link to="/products-grid"> Products Grid </nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="2-3">
-                          <nuxt-link to=""> Products Management </nuxt-link>
+                          <nuxt-link to="/products-management">
+                            Products Management
+                          </nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="2-4">
-                          <nuxt-link to="">Products Editor </nuxt-link>
+                          <nuxt-link to="/product-editor">Products Editor </nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="2-5">
-                          <nuxt-link to="">Banners </nuxt-link>
+                          <nuxt-link to="/banner">Banners </nuxt-link>
                         </el-menu-item>
                       </el-menu-item-group>
                     </el-submenu>
                     <el-menu-item index="3">
                       <i class="el-icon-menu"></i>
-                      <span>Orders</span>
+                      <nuxt-link to="/order">Orders</nuxt-link>
                     </el-menu-item>
                     <el-menu-item index="4">
                       <i class="el-icon-setting"></i>
-                      <span>Statistics</span>
+                      <nuxt-link to="/statistic">Statistics</nuxt-link>
                     </el-menu-item>
                     <el-menu-item index="5">
                       <i class="el-icon-setting"></i>
-                      <span>Reviews</span>
+                      <nuxt-link to="/reviews">Reviews</nuxt-link>
                     </el-menu-item>
                     <el-menu-item index="6">
                       <i class="el-icon-setting"></i>
-                      <span>Customers</span>
+                      <nuxt-link to="/customer">Customers</nuxt-link>
                     </el-menu-item>
                     <el-menu-item index="7">
                       <i class="el-icon-setting"></i>
-                      <span>Transactions</span>
+                      <nuxt-link to="/transaction">Transactions</nuxt-link>
                     </el-menu-item>
                     <el-submenu index="8">
                       <template slot="title">
@@ -110,10 +106,10 @@
                       </template>
                       <el-menu-item-group>
                         <el-menu-item index="8-1">
-                          <nuxt-link to="">Login</nuxt-link>
+                          <nuxt-link to="/login">Login</nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="8-2">
-                          <nuxt-link to="">Page 404</nuxt-link>
+                          <nuxt-link to="/page-error">Page 404</nuxt-link>
                         </el-menu-item>
                       </el-menu-item-group>
                     </el-submenu>
@@ -124,10 +120,10 @@
                       </template>
                       <el-menu-item-group>
                         <el-menu-item index="9-1">
-                          <nuxt-link to="">General Settings</nuxt-link>
+                          <nuxt-link to="/general-setting">General Settings</nuxt-link>
                         </el-menu-item>
                         <el-menu-item index="9-2">
-                          <nuxt-link to="">Connected Apps</nuxt-link>
+                          <nuxt-link to="/connected-app">Connected Apps</nuxt-link>
                         </el-menu-item>
                       </el-menu-item-group>
                     </el-submenu>
@@ -172,10 +168,9 @@
                     >
                   </el-dropdown-item>
                   <el-dropdown-item>
-                    <img
-                      class="img-detail"
-                      src="~assets/images/eng.webp"
-                    /><span>(EN)</span>
+                    <img class="img-detail" src="~assets/images/eng.webp" /><span
+                      >(EN)</span
+                    >
                   </el-dropdown-item>
                   <el-dropdown-item>
                     <img class="img-detail" src="~assets/images/dk.webp" /><span
@@ -421,31 +416,31 @@
 </template>
 
 <script>
-import { defineComponent, reactive, toRefs } from '@nuxtjs/composition-api'
+import { defineComponent, reactive, toRefs } from "@nuxtjs/composition-api";
 
 export default defineComponent({
   setup() {
     const drawers = reactive({
       drawer: false,
-      direction: 'ltr',
+      direction: "ltr",
       message: false,
       notificate: false,
-    })
+    });
 
     const handleClose = (done) => {
-      done()
-    }
+      done();
+    };
 
     const handleOpenMenu = (key, keyPath) => {
-      console.log(key, keyPath)
-    }
+      console.log(key, keyPath);
+    };
     const handleCloseMenu = (key, keyPath) => {
-      console.log(key, keyPath)
-    }
+      console.log(key, keyPath);
+    };
 
-    return { ...toRefs(drawers), handleClose, handleOpenMenu, handleCloseMenu }
+    return { ...toRefs(drawers), handleClose, handleOpenMenu, handleCloseMenu };
   },
-})
+});
 </script>
 
 <style lang="scss">

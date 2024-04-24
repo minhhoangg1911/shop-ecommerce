@@ -19,6 +19,10 @@
                     </div>
                     <form>
                         <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="name" class="form-control" aria-describedby="name" />
+                        </div>
+                        <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">E-mail</label>
                             <input type="email" class="form-control" aria-describedby="emailHelp" />
                         </div>
@@ -28,7 +32,7 @@
                         </div>
                         <div class="forgot mb-3">Forgot PassWord?</div>
 
-                        <button type="submit" class="btn btn-submit">Login</button>
+                        <button type="submit" class="btn btn-submit">Register</button>
                         <div class="line-container">
                             <div class="line"></div>
                             <div class="text">or</div>
@@ -47,7 +51,7 @@
                         </div>
 
                         <div class="account">
-                            <p>Don't have an account? <nuxt-link to="/register">Sign Up</nuxt-link></p>
+                            <p>you have an account? <nuxt-link to="/login">Sign in</nuxt-link></p>
                         </div>
                     </form>
                 </div>
